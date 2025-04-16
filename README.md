@@ -2,7 +2,7 @@
 **Python - Hofman Encoding with Saving and Loading From File**
 
 This project is part of the "Theory of Information and Data Compression Methods" laboratory.
-
+---
 ✅ Supports both Huffman and fixed-length binary encoding
 
 ✅ Encodes and decodes any string with a custom alphabet
@@ -16,14 +16,16 @@ This project is part of the "Theory of Information and Data Compression Methods"
 ✅ Verifies decoding correctness
 
 ✅ Reports compression ratio and space savings
-</br>
 
+---
 **🛠️ Requirements**
+
 pip install bitarray
 
 pip install bitarray numpy
-
+---
 **🧠 How It Works**
+
 A frequency dictionary is created from the input text.
 
 A Huffman tree or fixed-length binary codebook is built from the frequency dictionary.
@@ -36,8 +38,9 @@ The file can be loaded later, restoring both the codebook and encoded text.
 
 The encoded data is decoded back into the original text for verification.
 
-
+---
 **🧪 Example Usage**
+
 <pre> ```
 with open('norm_wiki_sample.txt', 'r') as file:
     text = file.read()
@@ -68,8 +71,10 @@ bc.change_code(code)
 decoded = bc.decode(encoded_text)
 print("Decoded matches original:", validate_texts(text, decoded))
  ``` </pre>
-
+ 
+---
 **📂 File Format**
+
 The saved .bin file contains:
 
 Encoded characters (UTF-8)
@@ -81,8 +86,9 @@ Binary codes concatenated
 Encoded message (bitarray)
 
 
-
+---
 **📌 Notes**
+
 All encoded strings include a special end character (🏁) to mark termination.
 
 Decoding relies on matching bit patterns, so the codebook must be preserved.
