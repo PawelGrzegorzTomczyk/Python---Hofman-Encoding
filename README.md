@@ -16,7 +16,7 @@ This project is part of the "Theory of Information and Data Compression Methods"
 ✅ Verifies decoding correctness
 
 ✅ Reports compression ratio and space savings
-
+<br>
 
 **🛠️ Requirements**
 pip install bitarray
