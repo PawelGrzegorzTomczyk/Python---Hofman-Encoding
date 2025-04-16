@@ -17,15 +17,16 @@ This project is part of the "Theory of Information and Data Compression Methods"
 
 ✅ Reports compression ratio and space savings
 
----
-**🛠️ Requirements**
 
+**🛠️ Requirements**
+---
 pip install bitarray
 
 pip install bitarray numpy
----
-**🧠 How It Works**
 
+
+**🧠 How It Works**
+---
 A frequency dictionary is created from the input text.
 
 A Huffman tree or fixed-length binary codebook is built from the frequency dictionary.
@@ -38,9 +39,9 @@ The file can be loaded later, restoring both the codebook and encoded text.
 
 The encoded data is decoded back into the original text for verification.
 
----
-**🧪 Example Usage**
 
+**🧪 Example Usage**
+---
 <pre> ```
 with open('norm_wiki_sample.txt', 'r') as file:
     text = file.read()
@@ -72,9 +73,9 @@ decoded = bc.decode(encoded_text)
 print("Decoded matches original:", validate_texts(text, decoded))
  ``` </pre>
  
----
-**📂 File Format**
 
+**📂 File Format**
+---
 The saved .bin file contains:
 
 Encoded characters (UTF-8)
@@ -86,9 +87,9 @@ Binary codes concatenated
 Encoded message (bitarray)
 
 
----
-**📌 Notes**
 
+**📌 Notes**
+---
 All encoded strings include a special end character (🏁) to mark termination.
 
 Decoding relies on matching bit patterns, so the codebook must be preserved.
@@ -97,5 +98,6 @@ The decode() function stops at the end character, ensuring accurate output.
 
 
 **📃 License**
+---
 This project is provided for educational purposes and under open-source use.
 
