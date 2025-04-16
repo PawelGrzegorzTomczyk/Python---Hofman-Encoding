@@ -42,7 +42,7 @@ The encoded data is decoded back into the original text for verification.
 
 **🧪 Example Usage**
 ---
-<pre> ```
+<pre>
 with open('norm_wiki_sample.txt', 'r') as file:
     text = file.read()
 
@@ -71,7 +71,7 @@ code, encoded_text = bc.load(path)
 bc.change_code(code)
 decoded = bc.decode(encoded_text)
 print("Decoded matches original:", validate_texts(text, decoded))
- ``` </pre>
+</pre>
  
 
 **📂 File Format**
