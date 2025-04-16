@@ -1,5 +1,4 @@
-# bit array, ale bez encode
-# from numpy import bitarray 
+# bit array, ale bez encode w celach edukacyjnych
 from bitarray import bitarray
 from numpy import log2
 from math import ceil
